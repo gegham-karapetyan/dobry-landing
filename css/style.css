@@ -1053,8 +1053,8 @@ form {
 }
 
 .menu--active {
-  -webkit-transform: translate3d(100vw, 100vh, 0);
-          transform: translate3d(100vw, 100vh, 0);
+  -webkit-transform: translate3d(100%, 100%, 0);
+          transform: translate3d(100%, 100%, 0);
 }
 
 .menu__part-top--active {

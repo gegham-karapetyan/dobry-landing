@@ -1,4 +1,9 @@
 @font-face {
+  font-family: "Hanalei";
+  src: url("../fonts/HanaleiFill-Regular.woff");
+}
+
+@font-face {
   font-family: "Monsterrat_arm";
   src: url("../fonts/Montserrat_am3-Regular.woff");
 }
@@ -1048,8 +1053,8 @@ form {
 }
 
 .menu--active {
-  -webkit-transform: translate3d(100vw, 100vh, 0);
-          transform: translate3d(100vw, 100vh, 0);
+  -webkit-transform: translate3d(100%, 100%, 0);
+          transform: translate3d(100%, 100%, 0);
 }
 
 .menu__part-top--active {
