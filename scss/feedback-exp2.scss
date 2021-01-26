@@ -1,0 +1,215 @@
+@import "./variables.scss";
+
+.feedback--apple {
+  background: $dark-apple;
+  & input,
+  & textarea {
+    color: $blurry-apple;
+  }
+  & .copyright {
+    background-color: $blurry-apple;
+  }
+}
+.feedback--tomato {
+  background: $dark-tomato;
+  & input,
+  & textarea {
+    color: $blurry-tomato;
+  }
+  & .copyright {
+    background-color: $blurry-tomato;
+  }
+}
+.feedback--appleCitrus {
+  background: $dark-appleCitrus;
+  & input,
+  & textarea {
+    color: $blurry-appleCitrus;
+  }
+  & .copyright {
+    background-color: $blurry-appleCitrus;
+  }
+}
+.feedback--multiMix {
+  background: $dark-multiMix;
+  & input,
+  & textarea {
+    color: $blurry-multiMix;
+  }
+  & .copyright {
+    background-color: $blurry-multiMix;
+  }
+}
+
+.feedback-page {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  min-height: 640px;
+}
+// .menu .feedback-page {
+//   position: absolute;
+//   width: 100%;
+//   height: 100%;
+//   z-index: -1;
+//   &.feedback--active {
+//     z-index: 4;
+//   }
+// }
+.feedback__inner {
+  display: flex;
+  flex-flow: column nowrap;
+  width: 100%;
+}
+
+.feedback__text {
+  text-align: center;
+  margin-top: 25%;
+}
+
+form {
+  overflow: hidden;
+}
+.form label {
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.form--first {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+  min-height: 50vh;
+  padding-top: 35px;
+  width: 100%;
+}
+.form--second {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+  min-height: 50vh;
+  padding-top: 15px;
+  width: 100%;
+}
+.mail-input__bg,
+.name-input__bg,
+.phone-input__bg {
+  width: 100%;
+  height: 42px;
+}
+
+.textarea__bg {
+  width: 100%;
+  height: 95px;
+}
+
+.form__block {
+  position: relative;
+
+  & > input,
+  & > textarea {
+    position: absolute;
+    width: 90%;
+    bottom: 13px;
+    left: 5%;
+    z-index: 100;
+    font-weight: 500;
+    border: none;
+    background-color: transparent;
+  }
+  & > textarea {
+    height: 75px;
+  }
+  & > input:focus,
+  & > textarea:focus {
+    outline: none;
+  }
+
+  & > input:focus ~ svg {
+    stroke: #b71010;
+    stroke-width: 2px;
+  }
+  & > textarea:focus ~ svg {
+    stroke: #b71010;
+    stroke-width: 2px;
+  }
+}
+
+.form__btns {
+  display: flex;
+
+  align-items: center;
+  flex-flow: row nowrap;
+
+  &--first {
+    justify-content: center;
+  }
+  &--second {
+    justify-content: space-between;
+  }
+}
+.form__prev-btn {
+  padding-right: 40px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.contacts-feedback {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+
+  & .social img {
+    width: 100%;
+  }
+  & .social > a {
+    display: inline-block;
+    width: 28px;
+    margin-right: 17px;
+  }
+  &:last-child {
+    text-align: end;
+    font-family: "Montserrat", sans-serif;
+  }
+}
+
+.feedback__border > img {
+  width: 100%;
+  margin-bottom: -10px;
+}
+
+.copyright {
+  font-family: "Montserrat", sans-serif;
+  min-height: 58px;
+  padding-top: 10px;
+}
+
+//--------------experimental----------------
+.flip-box {
+  width: 100%;
+  height: 50vh;
+  perspective: 1000px;
+}
+.flip-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 2s cubic-bezier(0.57, 0.07, 0.04, 0.99);
+  transform-style: preserve-3d;
+}
+.flip-face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+.flip-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  transform: rotateY(180deg);
+}

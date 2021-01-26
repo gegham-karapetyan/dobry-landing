@@ -1,0 +1,235 @@
+.feedback--apple {
+  background: #469f6a;
+}
+
+.feedback--apple input,
+.feedback--apple textarea {
+  color: #56bb7f;
+}
+
+.feedback--apple .copyright {
+  background-color: #56bb7f;
+}
+
+.feedback--tomato {
+  background: #e6775f;
+}
+
+.feedback--tomato input,
+.feedback--tomato textarea {
+  color: #f39070;
+}
+
+.feedback--tomato .copyright {
+  background-color: #f39070;
+}
+
+.feedback--appleCitrus {
+  background: #f2a781;
+}
+
+.feedback--appleCitrus input,
+.feedback--appleCitrus textarea {
+  color: #f29768;
+}
+
+.feedback--appleCitrus .copyright {
+  background-color: #f29768;
+}
+
+.feedback--multiMix {
+  background: #eaa623;
+}
+
+.feedback--multiMix input,
+.feedback--multiMix textarea {
+  color: #f1bb23;
+}
+
+.feedback--multiMix .copyright {
+  background-color: #f1bb23;
+}
+
+.feedback-page {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  width: 100%;
+  height: 100vh;
+  min-height: 640px;
+}
+
+.feedback__text {
+  text-align: center;
+  margin-top: 20vh;
+}
+
+form {
+  overflow: hidden;
+}
+
+.form label {
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.form--first {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  height: 50vh;
+  min-height: 320px;
+  padding-top: 35px;
+  width: 100%;
+}
+
+.form--second {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  height: 50vh;
+  min-height: 320px;
+  padding-top: 15px;
+  width: 100%;
+}
+
+.mail-input__bg,
+.name-input__bg,
+.phone-input__bg {
+  width: 100%;
+  height: 42px;
+}
+
+.textarea__bg {
+  width: 100%;
+  height: 95px;
+}
+
+.form__block {
+  position: relative;
+}
+
+.form__block > input,
+.form__block > textarea {
+  position: absolute;
+  width: 90%;
+  bottom: 13px;
+  left: 5%;
+  z-index: 10;
+  font-weight: 500;
+  border: none;
+  background-color: transparent;
+}
+
+.form__block > textarea {
+  height: 75px;
+}
+
+.form__block > input:focus,
+.form__block > textarea:focus {
+  outline: none;
+}
+
+.form__block > input:focus ~ svg {
+  stroke: #b71010;
+  stroke-width: 2px;
+}
+
+.form__block > textarea:focus ~ svg {
+  stroke: #b71010;
+  stroke-width: 2px;
+}
+
+.form__btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+}
+
+.form__btns--first {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.form__btns--second {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.form__prev-btn {
+  padding-right: 40px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.contacts-feedback {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contacts-feedback .social img {
+  width: 100%;
+}
+
+.contacts-feedback .social > a {
+  display: inline-block;
+  width: 28px;
+  margin-right: 17px;
+}
+
+.contacts-feedback > div:last-child {
+  text-align: end;
+  font-family: "Montserrat", sans-serif;
+}
+
+.feedback__border > img {
+  margin-bottom: -10px;
+  width: 100%;
+}
+
+.copyright {
+  font-family: "Montserrat", sans-serif;
+  min-height: 58px;
+  padding-top: 10px;
+}
+/*# sourceMappingURL=feedback-exp.css.map */

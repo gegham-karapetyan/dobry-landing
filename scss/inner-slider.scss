@@ -1,0 +1,33 @@
+.inner-slider-container {
+  width: 100%;
+  min-height: 640px;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+.inner-slider-track {
+  width: 100%;
+  height: 100%;
+  display: flex;
+
+  transform: translate3d(0px, 0, 0);
+  box-sizing: content-box;
+  z-index: 1;
+}
+.inner-slider-track--vertical {
+  flex-flow: column nowrap;
+  transition: transform 0.5s ease;
+}
+.inner-slider-track--horizontal {
+  flex-flow: row nowrap;
+  transition: transform 0.3s ease-in-out;
+}
+.inner-slider-slide {
+  flex-shrink: 0;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow-y: auto;
+  transition-property: transform;
+}

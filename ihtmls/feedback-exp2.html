@@ -1,0 +1,115 @@
+<!-- -----------------experimental-------------------- -->
+
+<div class="feedback-page">
+  <div class="feedback__text">
+    <img src="images/feedback2.png" alt="feddback-text" />
+  </div>
+  <div class="container">
+    <form action="action" method="POST">
+      <div class="inner-slider-track inner-slider-track--horizontal">
+        <div class="inner-slider-slide">
+          <div class="form form--first">
+            <div class="form__block">
+              <label for="uname">Անուն Ազգանուն*</label>
+              <input
+                id="uname"
+                type="text"
+                class="feedback__uname"
+                autocomplete="off"
+                name="uname"
+                tabindex="-1"
+                required
+              />
+              <svg class="name-input__bg">
+                <use xlink:href="#name-input-bg"></use>
+              </svg>
+            </div>
+            <div class="form__block">
+              <label for="mail">էլ․ հասցե*</label>
+              <input
+                id="mail"
+                type="text"
+                class="feedback__mail"
+                name="mail"
+                autocomplete="off"
+                required
+              />
+              <svg class="mail-input__bg">
+                <use xlink:href="#mail-input-bg"></use>
+              </svg>
+            </div>
+
+            <div class="form__btns form__btns--first">
+              <button type="button" class="form__next-btn">
+                <img src="./images/next-btn.png" alt="next-btn" />
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="inner-slider-slide">
+          <div class="form form--second">
+            <div class="form__block">
+              <label for="phone">Հեռախոսահամար*</label>
+              <input
+                id="phone"
+                type="tel"
+                autocomplete="off"
+                name="phone"
+                required
+              />
+              <svg class="phone-input__bg">
+                <use xlink:href="#name-input-bg"></use>
+              </svg>
+            </div>
+            <div class="form__block">
+              <label for="note">Նշում</label>
+              <textarea name="note" id="note" cols="10" rows="10"> </textarea>
+              <svg class="textarea__bg">
+                <use xlink:href="#textarea-bg"></use>
+              </svg>
+            </div>
+
+            <div class="form__btns form__btns--second">
+              <button type="button" class="form__prev-btn">
+                <img src="./images/next-sign.svg" alt="next-sign" />
+              </button>
+
+              <button type="submit" class="feedback__submit">
+                <img src="./images/submit-btn.png" alt="submit-btn" />
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+
+  <div class="container">
+    <div class="contacts-feedback">
+      <div class="social">
+        <a href="https://facebook.com"
+          ><img src="images/facebook-icon.svg" alt="facebook-icon"
+        /></a>
+        <a href="https://youtube.com"
+          ><img src="images/youtube-icon.svg" alt="youtube-icon"
+        /></a>
+        <a href="https://instagram.com"
+          ><img src="images/instagram-icon.svg" alt="instagram-icon"
+        /></a>
+      </div>
+      <div>
+        <a href="mailto:https://mail@dobry.am">mail@dobry.am</a><br />
+        <a href="tel:+374 00 00 00 00">+374 00 00 00 00</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="feedback__border">
+    <img src="images/header-border.svg" alt="border" width="100%" />
+  </div>
+  <div class="copyright">
+    <div class="container">
+      <span>Copyright © 2020 dobry.am<br />All Rights Reserved.</span>
+    </div>
+  </div>
+</div>

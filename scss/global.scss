@@ -1,0 +1,61 @@
+@import "./variables.scss";
+
+html {
+  font-size: 12px;
+  scroll-behavior: smooth;
+}
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+  font-family: "Monsterrat_arm";
+  font-weight: 500;
+  color: $white;
+  line-height: 1.5rem;
+}
+img,
+svg,
+video,
+textarea {
+  vertical-align: middle;
+}
+textarea {
+  resize: none;
+  background-color: transparent;
+}
+a {
+  text-decoration: none;
+  color: $white;
+}
+input,
+select,
+button {
+  outline: none;
+  border: none;
+  background-color: transparent;
+}
+h2 {
+  font-size: 18px;
+  line-height: 2rem;
+  font-weight: 500;
+}
+
+.wrapper {
+  min-width: 320px;
+  // max-width: 800px;
+  padding: 0;
+  // margin: auto;
+  box-shadow: 30px 0 40px rgba(0, 0, 0, 0.3), -30px 0 40px rgba(0, 0, 0, 0.3);
+
+  position: relative;
+  user-select: none;
+}
+.container {
+  width: 83%;
+  margin: auto;
+}

@@ -1,0 +1,248 @@
+.feedback--apple {
+  background: #469f6a;
+}
+
+.feedback--apple input,
+.feedback--apple textarea {
+  color: #56bb7f;
+}
+
+.feedback--apple .copyright {
+  background-color: #56bb7f;
+}
+
+.feedback--tomato {
+  background: #e6775f;
+}
+
+.feedback--tomato input,
+.feedback--tomato textarea {
+  color: #f39070;
+}
+
+.feedback--tomato .copyright {
+  background-color: #f39070;
+}
+
+.feedback--appleCitrus {
+  background: #f2a781;
+}
+
+.feedback--appleCitrus input,
+.feedback--appleCitrus textarea {
+  color: #f29768;
+}
+
+.feedback--appleCitrus .copyright {
+  background-color: #f29768;
+}
+
+.feedback--multiMix {
+  background: #eaa623;
+}
+
+.feedback--multiMix input,
+.feedback--multiMix textarea {
+  color: #f1bb23;
+}
+
+.feedback--multiMix .copyright {
+  background-color: #f1bb23;
+}
+
+.feedback-page {
+  padding-top: 130px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: column nowrap;
+  flex-flow: column nowrap;
+  width: 100%;
+  height: 100vh;
+  min-height: 640px;
+}
+
+.menu .feedback-page {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.menu .feedback-page.feedback--active {
+  z-index: 4;
+}
+
+.feedback__text {
+  text-align: center;
+}
+
+.form label {
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.form--first {
+  margin-top: 67px;
+}
+
+.form--second {
+  margin-top: 30px;
+}
+
+.mail-input__bg,
+.name-input__bg,
+.phone-input__bg {
+  width: 100%;
+  height: 42px;
+}
+
+.textarea__bg {
+  width: 100%;
+  height: 95px;
+}
+
+.form__block {
+  position: relative;
+  margin: 22px 0;
+}
+
+.form__block > input,
+.form__block > textarea {
+  position: absolute;
+  width: 90%;
+  bottom: 13px;
+  left: 5%;
+  z-index: 100;
+  font-weight: 500;
+  border: none;
+  background-color: transparent;
+}
+
+.form__block > textarea {
+  height: 75px;
+}
+
+.form__block > input:focus,
+.form__block > textarea:focus {
+  outline: none;
+}
+
+.form__block > input:focus ~ svg {
+  stroke: #b71010;
+  stroke-width: 2px;
+}
+
+.form__block > textarea:focus ~ svg {
+  stroke: #b71010;
+  stroke-width: 2px;
+}
+
+.feedback__next-btn {
+  text-align: center;
+  margin-top: 45px;
+}
+
+.feedback__submit-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column nowrap;
+  flex-direction: column nowrap;
+  margin-top: 45px;
+}
+
+.contacts-feedback {
+  margin-top: 40px;
+  margin-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  width: 100%;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.contacts-feedback:last-child {
+  text-align: end;
+}
+
+.social img {
+  width: 100%;
+}
+
+.social > a {
+  display: inline-block;
+}
+
+.contacts-feedback .social > a {
+  width: 28px;
+  margin-right: 17px;
+}
+
+.feedback__border > img {
+  width: 100%;
+}
+
+.copyright {
+  font-family: "Montserrat", sans-serif;
+  min-height: 58px;
+  padding-top: 10px;
+}
+
+.flip-box {
+  width: 100%;
+  height: 50vh;
+  -webkit-perspective: 1000px;
+  perspective: 1000px;
+}
+
+.flip-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: -webkit-transform 2s cubic-bezier(0.57, 0.07, 0.04, 0.99);
+  transition: -webkit-transform 2s cubic-bezier(0.57, 0.07, 0.04, 0.99);
+  transition: transform 2s cubic-bezier(0.57, 0.07, 0.04, 0.99);
+  transition: transform 2s cubic-bezier(0.57, 0.07, 0.04, 0.99),
+    -webkit-transform 2s cubic-bezier(0.57, 0.07, 0.04, 0.99);
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+.flip-face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+/*# sourceMappingURL=feedback.css.map */

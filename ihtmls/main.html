@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap"
+      rel="stylesheet"
+    />
+    <!-- <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    /> -->
+    <!-- <link rel="stylesheet" href="css/x.css" /> -->
+
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Dobry</title>
+  </head>
+  <body>
+    <include class="inserted-svg"></include>
+
+    <div class="wrapper">
+      <include class="header"></include>
+      <include class="menu-exp"></include>
+
+      <div class="swiper-container">
+        <div class="swiper-wrapper first-slider">
+          <include class="swiper-slide--apple"></include>
+          <include class="swiper-slide--tomato"></include>
+          <include class="swiper-slide--appleCitrus"></include>
+          <include class="swiper-slide--multiMix"></include>
+        </div>
+      </div>
+      <button type="button" class="return-btn">
+        <img src="images/up-arrow.svg" alt="up-arrow" />
+      </button>
+    </div>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/template.js"></script>
+  </body>
+</html>

@@ -1,0 +1,181 @@
+@import "./variables.scss";
+
+.feedback--apple {
+  background: $dark-apple;
+  & input,
+  & textarea {
+    color: $blurry-apple;
+  }
+  & .copyright {
+    background-color: $blurry-apple;
+  }
+}
+.feedback--tomato {
+  background: $dark-tomato;
+  & input,
+  & textarea {
+    color: $blurry-tomato;
+  }
+  & .copyright {
+    background-color: $blurry-tomato;
+  }
+}
+.feedback--appleCitrus {
+  background: $dark-appleCitrus;
+  & input,
+  & textarea {
+    color: $blurry-appleCitrus;
+  }
+  & .copyright {
+    background-color: $blurry-appleCitrus;
+  }
+}
+.feedback--multiMix {
+  background: $dark-multiMix;
+  & input,
+  & textarea {
+    color: $blurry-multiMix;
+  }
+  & .copyright {
+    background-color: $blurry-multiMix;
+  }
+}
+
+.feedback-page {
+  position: relative;
+  display: flex;
+  flex-flow: column nowrap;
+  width: 100%;
+  height: 100vh;
+  min-height: 640px;
+}
+
+.feedback__text {
+  text-align: center;
+  //experimental
+  margin-top: 20vh;
+}
+
+form {
+  overflow: hidden;
+}
+.form label {
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.form--first {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+  height: 50vh;
+  min-height: 320px;
+  padding-top: 35px;
+  width: 100%;
+}
+.form--second {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+  height: 50vh;
+  min-height: 320px;
+  padding-top: 15px;
+  width: 100%;
+}
+.mail-input__bg,
+.name-input__bg,
+.phone-input__bg {
+  width: 100%;
+  height: 42px;
+}
+
+.textarea__bg {
+  width: 100%;
+  height: 95px;
+}
+
+.form__block {
+  position: relative;
+
+  & > input,
+  & > textarea {
+    position: absolute;
+    width: 90%;
+    bottom: 13px;
+    left: 5%;
+    z-index: 10;
+    font-weight: 500;
+    border: none;
+    background-color: transparent;
+  }
+  & > textarea {
+    height: 75px;
+  }
+  & > input:focus,
+  & > textarea:focus {
+    outline: none;
+  }
+
+  & > input:focus ~ svg {
+    stroke: #b71010;
+    stroke-width: 2px;
+  }
+  & > textarea:focus ~ svg {
+    stroke: #b71010;
+    stroke-width: 2px;
+  }
+}
+
+.form__btns {
+  display: flex;
+
+  align-items: center;
+  flex-flow: row nowrap;
+
+  &--first {
+    justify-content: center;
+  }
+  &--second {
+    justify-content: space-between;
+  }
+}
+.form__prev-btn {
+  padding-right: 40px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.contacts-feedback {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+
+  & .social img {
+    width: 100%;
+  }
+  & .social > a {
+    display: inline-block;
+    width: 28px;
+    margin-right: 17px;
+  }
+  & > div:last-child {
+    text-align: end;
+    font-family: "Montserrat", sans-serif;
+  }
+}
+
+.feedback__border > img {
+  margin-bottom: -10px;
+  width: 100%;
+}
+
+.copyright {
+  font-family: "Montserrat", sans-serif;
+  min-height: 58px;
+  padding-top: 10px;
+}
+
+//--------------experimental----------------

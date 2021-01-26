@@ -1,0 +1,47 @@
+@import "./fonts";
+@import "./variables.scss";
+@import "./global.scss";
+@import "./header.scss";
+@import "./swiper.scss";
+@import "./inner-slider.scss";
+@import "./home.scss";
+@import "./content.scss";
+@import "./feedback-exp.scss";
+@import "./menu-exp.scss";
+@import "./about-us.scss"; // global
+//   header
+//   swiper
+//     inner-slider
+//       home
+//       content
+//fixed elements
+.return-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  position: fixed;
+  display: none;
+  z-index: 2;
+  top: 50%;
+  right: 3%;
+  text-align: center;
+
+  &--active {
+    display: block;
+  }
+
+  &--apple {
+    background-color: $blurry-apple;
+  }
+  &--appleCitrus {
+    background-color: $blurry-appleCitrus;
+  }
+  &--tomato {
+    background-color: $blurry-tomato;
+  }
+  &--multiMix {
+    background-color: $blurry-multiMix;
+  }
+}
